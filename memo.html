@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cardinal Gold Investment Memo</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f4f4f4;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background: white;
+            min-height: 100vh;
+        }
+
+        header {
+            background: linear-gradient(135deg, #8B0000, #FFD700);
+            color: white;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            border-radius: 8px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            opacity: 0.95;
+        }
+
+        .nav-links {
+            margin: 2rem 0;
+            padding: 1rem;
+            background: #f8f9fa;
+            border-radius: 8px;
+        }
+
+        .nav-links h2 {
+            color: #8B0000;
+            margin-bottom: 1rem;
+        }
+
+        .nav-links ul {
+            list-style: none;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+        }
+
+        .nav-links a {
+            color: #0066cc;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            padding: 0.5rem;
+            border-radius: 4px;
+            transition: background 0.3s;
+        }
+
+        .nav-links a:hover {
+            background: #e8f4fd;
+            text-decoration: underline;
+        }
+
+        .nav-links .icon {
+            margin-right: 8px;
+            font-size: 1.2rem;
+        }
+
+        .executive-summary {
+            background: #f8f9fa;
+            padding: 2rem;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+            border-left: 4px solid #8B0000;
+        }
+
+        .executive-summary h2 {
+            color: #8B0000;
+            margin-bottom: 1rem;
+        }
+
+        .key-metrics {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin: 2rem 0;
+        }
+
+        .metric-card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            border-top: 3px solid #FFD700;
+        }
+
+        .metric-label {
+            font-size: 0.9rem;
+            color: #666;
+            margin-bottom: 0.5rem;
+        }
+
+        .metric-value {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #8B0000;
+        }
+
+        .content-section {
+            margin: 2rem 0;
+            padding: 2rem;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+
+        .content-section h2 {
+            color: #8B0000;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #FFD700;
+        }
+
+        .content-section h3 {
+            color: #555;
+            margin: 1.5rem 0 0.5rem;
+        }
+
+        .content-section ul {
+            margin-left: 2rem;
+            margin-top: 1rem;
+        }
+
+        .content-section li {
+            margin: 0.5rem 0;
+        }
+
+        footer {
+            margin-top: 3rem;
+            padding: 2rem;
+            background: #333;
+            color: white;
+            text-align: center;
+            border-radius: 8px;
+        }
+
+        .disclaimer {
+            background: #fff3cd;
+            border: 1px solid #ffc107;
+            padding: 1rem;
+            border-radius: 4px;
+            margin: 2rem 0;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 1.8rem;
+            }
+
+            .key-metrics {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Cardinal Gold Investment Memo</h1>
+            <div class="subtitle">Real Estate Investment Analysis</div>
+        </header>
+
+        <div class="nav-links">
+            <h2>📁 Project Resources</h2>
+            <ul>
+                <li>
+                    <a href="your-portfolio/assets/models/Redlands-Model.xlsx" download>
+                        <span class="icon">📊</span>
+                        Redlands Financial Model
+                    </a>
+                </li>
+                <li>
+                    <a href="your-portfolio/assets/models/Torrance-Model.xlsx" download>
+                        <span class="icon">📊</span>
+                        Torrance Financial Model
+                    </a>
+                </li>
+                <li>
+                    <a href="your-portfolio/assets/models/Market-Comps.xlsx" download>
+                        <span class="icon">📈</span>
+                        Market Comparables Analysis
+                    </a>
+                </li>
+                <li>
+                    <a href="your-portfolio/assets/documents/Investment-Memo.docx" download>
+                        <span class="icon">📄</span>
+                        Investment Memo Document
+                    </a>
+                </li>
+                <li>
+                    <a href="your-portfolio/assets/documents/Market-Analysis.pdf" download>
+                        <span class="icon">📑</span>
+                        Market Analysis Report
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="executive-summary">
+            <h2>Executive Summary</h2>
+            <p>
+                Cardinal Gold presents a compelling investment opportunity in the Southern California real estate market.
+                This memo outlines our comprehensive analysis of two prime properties in Redlands and Torrance,
+                demonstrating strong potential for value creation through strategic acquisition and management.
+            </p>
+        </div>
+
+        <div class="key-metrics">
+            <div class="metric-card">
+                <div class="metric-label">Total Investment</div>
+                <div class="metric-value">$45.2M</div>
+            </div>
+            <div class="metric-card">
+                <div class="metric-label">Target IRR</div>
+                <div class="metric-value">18.5%</div>
+            </div>
+            <div class="metric-card">
+                <div class="metric-label">Equity Multiple</div>
+                <div class="metric-value">2.3x</div>
+            </div>
+            <div class="metric-card">
+                <div class="metric-label">Hold Period</div>
+                <div class="metric-value">5 Years</div>
+            </div>
+        </div>
+
+        <div class="content-section">
+            <h2>Investment Thesis</h2>
+            <h3>Market Opportunity</h3>
+            <p>
+                The Southern California real estate market presents unique opportunities for value creation through:
+            </p>
+            <ul>
+                <li>Strong demographic growth and limited supply constraints</li>
+                <li>Below-market rents with significant upside potential</li>
+                <li>Operational improvements through professional management</li>
+                <li>Strategic capital improvements to enhance property value</li>
+            </ul>
+
+            <h3>Value Creation Strategy</h3>
+            <ul>
+                <li><strong>Immediate:</strong> Implement professional property management systems</li>
+                <li><strong>Year 1-2:</strong> Execute targeted capital improvements program</li>
+                <li><strong>Year 2-3:</strong> Achieve market rental rates through strategic repositioning</li>
+                <li><strong>Year 4-5:</strong> Optimize operations and prepare for strategic exit</li>
+            </ul>
+        </div>
+
+        <div class="content-section">
+            <h2>Property Overview</h2>
+            <h3>Redlands Property</h3>
+            <ul>
+                <li>Location: Prime downtown Redlands location</li>
+                <li>Size: 120,000 SF mixed-use development</li>
+                <li>Current Occupancy: 87%</li>
+                <li>Acquisition Price: $24.5M</li>
+            </ul>
+
+            <h3>Torrance Property</h3>
+            <ul>
+                <li>Location: South Bay business district</li>
+                <li>Size: 85,000 SF office complex</li>
+                <li>Current Occupancy: 91%</li>
+                <li>Acquisition Price: $20.7M</li>
+            </ul>
+        </div>
+
+        <div class="content-section">
+            <h2>Financial Analysis</h2>
+            <p>
+                Our comprehensive financial modeling demonstrates strong returns across multiple scenarios.
+                The base case projections show:
+            </p>
+            <ul>
+                <li>Year 1 NOI: $3.2M (7.1% yield on cost)</li>
+                <li>Year 5 NOI: $4.8M (10.6% yield on cost)</li>
+                <li>Exit Cap Rate: 6.5%</li>
+                <li>Total Project Returns: 18.5% IRR / 2.3x Equity Multiple</li>
+            </ul>
+        </div>
+
+        <div class="content-section">
+            <h2>Risk Mitigation</h2>
+            <ul>
+                <li><strong>Market Risk:</strong> Diversification across two distinct submarkets</li>
+                <li><strong>Tenant Risk:</strong> Strong tenant roster with staggered lease expirations</li>
+                <li><strong>Execution Risk:</strong> Experienced management team with proven track record</li>
+                <li><strong>Capital Risk:</strong> Conservative leverage at 65% LTV</li>
+            </ul>
+        </div>
+
+        <div class="disclaimer">
+            <strong>Disclaimer:</strong> This investment memo is for illustrative purposes only and does not constitute an offer to sell or solicitation of an offer to buy any securities. All financial projections are hypothetical and subject to change.
+        </div>
+
+        <footer>
+            <p>&copy; 2024 Cardinal Gold Investments | Professional Portfolio Demo</p>
+            <p>Contact: investments@cardinalgold.com | (555) 123-4567</p>
+        </footer>
+    </div>
+</body>
+</html>
